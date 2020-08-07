@@ -1,0 +1,7 @@
+{
+  "name": "iframe-injection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mattèo Gauthier <matteo.gauthier@gmail.com>",
+  "license": "MIT"
+}

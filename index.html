@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="https://unpkg.com/minireset.css">
+</head>
+
+<body>
+
+  <iframe id="myIframe" frameborder="0" onload="onFrameLoad()" style="height: 100%; width: 100%" is="x-frame-bypass"
+          src="https://github.com/"></iframe>
+
+  <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+  <script src="https://unpkg.com/zepto"></script>
+  <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+  <script src="./logic.js"></script>
+  <script>
+    function onFrameLoad() {
+      var scriptTag ="<script src='https://widget.battleforthenet.com/widget.js' async><\/script>";
+
+      console.log(scriptTag);
+      //inject content into iframe
+      $('#myIframe').contents().find('body').html(scriptTag)
+    };
+  </script>
+</body>
+
+</html>
